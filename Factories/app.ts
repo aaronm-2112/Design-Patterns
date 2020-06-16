@@ -1,7 +1,7 @@
 // Where factories are instantiated and utilized
 
-import ExportWriter from './ExportWriter';
-import PayrollExportWriter from './PayrollExportWriter';
+import ExportWriter from './Creators/ExportWriter';
+import PayrollExportWriter from './Creators/PayrollExportWriter';
 
 
 //Write the exports to file 
