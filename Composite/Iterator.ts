@@ -1,7 +1,8 @@
-import MenuItem from './MenuItem';
+import MenuComponent from './MenuComponent';
+import NullIterator from './NullIterator';
 
 export default interface Iterator {
-  next(): MenuItem;
+  next(): MenuComponent;
   hasNext(): boolean;
-  remove(): MenuItem;
+  remove(): MenuComponent;
 }

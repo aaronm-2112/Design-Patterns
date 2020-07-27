@@ -26,3 +26,11 @@ var currConditions = new CurrentConditionsDisplay_2.default(weatherDataPull);
 weatherDataPull.setMeasurements(10, 12, 13);
 weatherDataPull.setMeasurements(10, 14, 13);
 weatherDataPull.setMeasurements(10, 20, 15);
+var obj = 5;
+var objNew = obj;
+if (objNew instanceof Number) {
+    console.log("yes obj is number");
+}
+else {
+    console.log("Obj is not a number");
+}

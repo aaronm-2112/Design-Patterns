@@ -13,6 +13,7 @@ var CurrentConditionsPull = /** @class */ (function () {
         weatherData.registerObserver(this);
     }
     CurrentConditionsPull.prototype.update = function (subject) {
+        //Another more robust option is to use a more specific subject class that implements ISubject for all weather station observers
         if (subject instanceof WeatherData_1.default) {
             var weatherDataSub = subject;
             this.humidity = weatherDataSub.getHumidity();

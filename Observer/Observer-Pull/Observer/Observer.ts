@@ -5,3 +5,4 @@ import ISubject from '../Subject/Subject';
 export default interface IObserver {
   update(subject: ISubject): void;
 }
+

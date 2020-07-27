@@ -26,3 +26,6 @@ let currConditions: CurrentConditionsPull = new CurrentConditionsPull(weatherDat
 weatherDataPull.setMeasurements(10, 12, 13)
 weatherDataPull.setMeasurements(10, 14, 13);
 weatherDataPull.setMeasurements(10, 20, 15)
+
+
+
