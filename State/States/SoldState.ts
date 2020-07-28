@@ -17,6 +17,7 @@ export default class SoldState extends State {
 
   dispense(): void {
     //release a gumball
+    console.log("In sold state");
     this.machine.releaseBall();
     //check if there are any more gumballs
     if (this.machine.getGumballCount() > 0) {

@@ -17,9 +17,20 @@ export default class HasQuarterState extends State {
   }
 
   turnCrank(): void {
-    console.log("Quarter accepted.");
+    console.log("You turned....");
     //change state to sold state
-    this.machine.setState(this.machine.getSoldState());
+    let winner: number = Math.random() * 100;
+    console.log(winner);
+    if (winner >= 0 && winner <= 10) { //arbitrary 10% chance range
+      if (this.machine.getGumballCount() > 1) {
+        console.log("More than one gumball! Moving to winner state!");
+        this.machine.setState(this.machine.getWinnerState());
+      }
+    } else {
+      console.log("Moving to sold state");
+      this.machine.setState(this.machine.getSoldState());
+    }
+
   }
 
   //default dispense behaviour -- cannot dispense from this state

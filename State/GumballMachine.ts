@@ -46,6 +46,7 @@ export default class GumballMachine {
 
   public turnCrank(): void {
     this.state.turnCrank();
+    this.state.dispense();
   }
 
   //do not have to check if out of gumballs because state will be selected when this is the case. Impossible to release ball when no balls left. 
